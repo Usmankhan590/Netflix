@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks = new Array(5);
+        var subjects = ['MS OFFICE' , 'HTML/CSS' , 'jQUERY' , 'BootStrap' , 'JavaScript']
+        var sum = 0;
+
+        for(var i=0; i<marks.length; i++){
+            marks[i] = parseFloat(prompt('Enter Marks of '+ subjects[i] ))
+
+            sum += marks[i]
+
+        }
+        for(var i=0; i<marks.length; i++){
+            document.write('Marks Of ' + subjects[i] + ' are ' + marks[i] + '<br> <br>')
+        }
+    </script>
+</body>
+</html>
